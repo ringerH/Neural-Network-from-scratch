@@ -5,10 +5,10 @@ Activations: ```relu, tanh, sigmoid, softmax, linear, leaky_relu, silu```
 
 1. **Imports**
 ```
-from nn.net import Model
-from nn.losses import CrossEntropyLoss
-from nn.layer import Layer
-from nn.dataloader import DataLoader  
+from net import Model
+from losses import CrossEntropyLoss
+from layer import Layer
+from dataloader import DataLoader  
  ``` 
 2. **Initialize model**  
  ```
