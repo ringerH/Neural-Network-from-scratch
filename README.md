@@ -1,16 +1,16 @@
 # Neural-Network-from-scratch
 A self-coded Neural Network implementation from scratch for regression and classification tasks.  
-Loss Functions: `**MSE, CCE, BCE**`
-Activations: ```**relu, tanh, sigmoid, softmax, linear, leaky_relu, silu**```  
+Loss Functions: `MSE, CCE, BCE`
+Activations: ```relu, tanh, sigmoid, softmax, linear, leaky_relu, silu```  
 
-**Imports**
+1. **Imports**
 ```
 from nn.net import Model
 from nn.losses import CrossEntropyLoss
 from nn.layer import Layer
 from nn.dataloader import DataLoader  
  ``` 
-**Initialize model**  
+2. **Initialize model**  
  ```
 model = Model()
 model.add(Layer(dim_in=10, dim_out=16, activation='sigmoid'))
@@ -21,12 +21,12 @@ model.add(Layer(16, 3, 'softmax'))
 model.loss_fxn = CrossEntropyLoss()
 model.lr = 1e-3  
 ```  
-**Dataloader**
+3. **Dataloader**
 ```
 train_loader = DataLoader(X_train, y_train, batch_size=64, drop_last=False)
 val_loader = DataLoader(X_val, y_val, batch_size=64, drop_last=False)  
 ```
-**Train-loop** 
+4. **Train-loop** 
 ```
 for epoch in range(epochs):
     loss = 0
@@ -38,7 +38,7 @@ for epoch in range(epochs):
 
     loss = loss / len(train_loader)  # take the average loss  
 ```
-**Validation Loop**  
+5. **Validation Loop**  
  ```
 loss = 0
 for x, y in val_loader:
