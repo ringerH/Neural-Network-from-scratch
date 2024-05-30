@@ -1,9 +1,9 @@
-# Neural-Network-from-scratch
+# **Mini Project, 6th Semester, B.Tech CSE, Jorhat Engineering College.**(Neural-Network-from-scratch)
 A self-coded Neural Network implementation from scratch for regression and classification tasks.  
 Loss Functions: `MSE, CCE, BCE`
 Activations: ```relu, tanh, sigmoid, softmax, linear, leaky_relu, silu```  
 
-**Mini Project, 6th Semester, B.Tech CSE, Jorhat Engineering College.**
+
 
 1. **Imports**
 ```
