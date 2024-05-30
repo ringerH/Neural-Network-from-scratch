@@ -3,6 +3,8 @@ A self-coded Neural Network implementation from scratch for regression and class
 Loss Functions: `MSE, CCE, BCE`
 Activations: ```relu, tanh, sigmoid, softmax, linear, leaky_relu, silu```  
 
+**Made as a part of B.Tech curriculum as Mini Project.**
+
 1. **Imports**
 ```
 from nn.net import Model
